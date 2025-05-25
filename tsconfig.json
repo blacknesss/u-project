@@ -13,10 +13,27 @@
         "moduleResolution": "node",
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true,
+        "isolatedModules": true,
+        "resolveJsonModule": true,
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "esnext"
+        ]
     },
     "ts-node": {
         "compilerOptions": {
             "module": "CommonJS",
         }
-    }
+    },
+    "include": [
+        "src/**/*",
+        "config/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
 }

@@ -1,8 +1,6 @@
 import { Route } from "react-router-dom";
 import { Suspense } from "react";
 import { Routes } from "react-router-dom";
-import { AboutPage } from "pages/AboutPage";
-import { MainPage } from "pages/MainPage";
 import { routeConfig } from "shared/config/routeConfig/routeConfig";
 
 export function AppRouter() {
