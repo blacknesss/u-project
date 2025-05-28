@@ -4,6 +4,7 @@
  */
 
 import type {Config} from 'jest';
+import path from 'path';
 
 const config: Config = {
   // All imported modules in your tests should be mocked automatically
@@ -21,8 +22,12 @@ const config: Config = {
   coveragePathIgnorePatterns: [
     "\\\\node_modules\\\\"
   ],
+  modulePaths: [
+    "<rootDir>src"
+  ],
   
   testEnvironment: "jsdom",
+  setupFilesAfterEnv: ['<rootDir>config/jest/setupTests.ts'],
   
   moduleDirectories: [
     "node_modules"
@@ -99,7 +104,10 @@ const config: Config = {
   // An array of file extensions your modules use
 
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
-  // moduleNameMapper: {},
+  moduleNameMapper: {
+    '\\.s?css$': 'identity-obj-proxy',
+    '\\.svg': path.resolve(__dirname, 'jestEmptyComponent.tsx'),
+  },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
   // modulePathIgnorePatterns: [],
