@@ -32,9 +32,11 @@
     "include": [
         "src/**/*",
         "config/**/*",
-        "./config/jest/setupTests.ts"
+        "./config/jest/setupTests.ts", 
+        "./config/storybook"
     ],
     "exclude": [
-        "node_modules"
+        "node_modules",
+        "dist"
     ]
 }

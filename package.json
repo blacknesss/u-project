@@ -8,7 +8,9 @@
     "start": "webpack serve --env port=3000",
     "build:prod": "webpack --env mode=production",
     "build:dev": "webpack --env mode=development",
-    "unit": "jest --config ./config/jest/jest.config.ts"
+    "unit": "jest --config ./config/jest/jest.config.ts",
+    "storybook": "storybook dev -p 6006 -c ./config/storybook",
+    "build-storybook": "storybook build -c ./config/storybook"
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,9 @@
     "@babel/preset-env": "^7.27.2",
     "@babel/preset-react": "^7.27.1",
     "@babel/preset-typescript": "^7.27.1",
+    "@storybook/addon-styling-webpack": "^1.0.1",
+    "@storybook/addon-webpack5-compiler-babel": "^3.0.6",
+    "@storybook/react-webpack5": "^9.0.4",
     "@svgr/webpack": "^8.1.0",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",

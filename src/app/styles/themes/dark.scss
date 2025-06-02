@@ -1,3 +1,13 @@
+:root{
+    --bg-color: #090949;
+    --inverted-bg-color: #e8e8ea;
+    
+    --primary-color: #049604;
+    --secondary-color: #04ff04;
+    --inverted-primary-color: #0232c2;
+    --inverted-secondary-color: #0449e0;
+}
+// :root добавлен, что б сторибук подхватывал переменные
 .app.dark {
     --bg-color: #090949;
     --inverted-bg-color: #e8e8ea;
