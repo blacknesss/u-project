@@ -4,15 +4,16 @@ import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from 'app/providers/ThemeProvider';
 import './shared/config/i18n/i18n';
 import { ErrorBoundary } from 'app/providers/ErrorBoundary';
+import 'app/styles/index.scss';
 
 const root = createRoot(document.getElementById('root') as HTMLElement);
 
 root.render(
-    <ErrorBoundary>
-        <BrowserRouter>
+    <BrowserRouter>
+        <ErrorBoundary>
             <ThemeProvider>
                 <App />
             </ThemeProvider>
-        </BrowserRouter>
-    </ErrorBoundary>,
+        </ErrorBoundary>
+    </BrowserRouter>,
 );
