@@ -3,12 +3,17 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { AppRouter } from 'app/providers/router';
 import { Navbar } from 'widgets/Navbar';
 import { Sidebar } from 'widgets/Sidebar';
-import { Suspense, useState } from 'react';
-import { Modal } from 'shared/ui/Modal/Modal';
+import { Suspense, useEffect} from 'react';
+import { useDispatch } from 'react-redux';
+import { userActions } from 'entities/User';
 
 export default function App() {
     const { theme } = useTheme();
- 
+    const dispatch = useDispatch<any>();
+
+    useEffect(() => {
+        dispatch(userActions.initAuthData);
+    }, [dispatch])
 
     return (
         <div className={classNames('app', {}, [theme])}>

@@ -8,5 +8,8 @@
     "Короткий язык": "en",
     "Войти": "Sign in",
     "Введите логин": "type your login",
-    "Введите пароль": "type your password"
+    "Введите пароль": "type your password",
+    "Форма авторизации": "Auth form",
+    "Вы ввели неверный логин или пароль": "incorrect login or password",
+    "Выйти": "logout"
 }
