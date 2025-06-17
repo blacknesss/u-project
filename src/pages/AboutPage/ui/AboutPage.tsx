@@ -9,5 +9,5 @@ export default function AboutPage() {
     <div>
         {t('О сайте')}
     </div>
-  )
+  );
 }

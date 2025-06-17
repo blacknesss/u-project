@@ -32,12 +32,11 @@ export const Outline: Story = {
     },
 };
 
-
 export const OutlineSizeL: Story = {
     args: {
         theme: ThemeButton.OUTLINE,
         children: 'Text',
-        size: ButtonSize.L
+        size: ButtonSize.L,
     },
 };
 
@@ -45,7 +44,7 @@ export const OutlineSizeXl: Story = {
     args: {
         children: 'Text',
         theme: ThemeButton.OUTLINE,
-        size: ButtonSize.XL
+        size: ButtonSize.XL,
     },
 };
 
@@ -53,24 +52,23 @@ export const Background: Story = {
     args: {
         theme: ThemeButton.BACKGROUND,
         children: 'Text',
-    }
-}
+    },
+};
 
 export const BackgroundInverted: Story = {
     args: {
         theme: ThemeButton.BACKGROUND_INVERTED,
         children: 'Text',
-    }
-}
+    },
+};
 
 export const Square: Story = {
     args: {
         theme: ThemeButton.BACKGROUND_INVERTED,
         children: '>',
         square: true,
-    }
-}
-
+    },
+};
 
 export const SquareSizeL: Story = {
     args: {
@@ -78,8 +76,8 @@ export const SquareSizeL: Story = {
         children: '>',
         square: true,
         size: ButtonSize.L,
-    }
-}
+    },
+};
 
 export const SquareSizeXl: Story = {
     args: {
@@ -87,5 +85,5 @@ export const SquareSizeXl: Story = {
         children: '<',
         square: true,
         size: ButtonSize.XL,
-    }
-}
+    },
+};

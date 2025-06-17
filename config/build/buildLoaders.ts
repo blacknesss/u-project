@@ -36,11 +36,5 @@ export function buildLoaders(options: BuildOptions): RuleSetRule[] {
         ],
     };
 
-    return [
-        fileLoader,
-        svgLoader,
-        babelLoader,
-        typescriptLoader,
-        cssLoader,
-    ]
+    return [fileLoader, svgLoader, babelLoader, typescriptLoader, cssLoader];
 }

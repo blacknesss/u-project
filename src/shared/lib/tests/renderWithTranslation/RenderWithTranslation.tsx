@@ -8,5 +8,5 @@ export function RenderWithTranslation (component:ReactNode) {
         <I18nextProvider i18n={i18nForTests}>
             {component}
         </I18nextProvider>
-    )
+    );
 }
